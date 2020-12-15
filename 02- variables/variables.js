@@ -1,0 +1,17 @@
+var found = true;
+var grade = 90.3;
+var firstName = "ahmed";
+var lastName = "shaheen";
+var anyVar = "anyVar";
+console.log("my fist name:" + firstName);
+console.log("my last name:" + lastName);
+console.log("my grade:" + grade);
+console.log("am I founded in database:" + found);
+console.log("any var:" + anyVar);
+anyVar = 5;
+console.log("any var:" + anyVar);
+anyVar = false;
+console.log("any var:" + anyVar);
+anyVar = "hello";
+console.log("any var:" + anyVar);
+console.log("Hi i am " + firstName + " " + lastName);
