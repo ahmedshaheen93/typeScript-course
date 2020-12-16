@@ -1,11 +1,6 @@
 class Customer{
-	private _fristName:string;
-	private _lastName:string;
-	private _age:number;
-	constructor(fristName:string, lastName:string, age:number){
-		this._fristName=fristName;
-		this._lastName=lastName;
-		this._age=age;
+	constructor(private _fristName:string, private _lastName:string, private _age:number){
+	
 	}
 	get fristName():string{
 		return this._fristName;
