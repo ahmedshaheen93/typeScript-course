@@ -1,3 +1,4 @@
+"use strict";
 var names = ["ahmed", "ibraheem", "yousef", "omnia"];
 //ordinary for
 console.log("------------------------");

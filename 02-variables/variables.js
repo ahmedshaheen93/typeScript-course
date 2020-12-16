@@ -1,3 +1,4 @@
+"use strict";
 var found = true;
 var grade = 90.3;
 var firstName = "ahmed";
