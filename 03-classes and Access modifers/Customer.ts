@@ -1,22 +1,22 @@
 class Customer{
-	private fristName:string;
-	private lastName:string;
-	private age:number;
+	private _fristName:string;
+	private _lastName:string;
+	private _age:number;
 	constructor(fristName:string, lastName:string, age:number){
-		this.fristName=fristName;
-		this.lastName=lastName;
-		this.age=age;
+		this._fristName=fristName;
+		this._lastName=lastName;
+		this._age=age;
 	}
-	public getFristName():string{
-		return this.fristName;
+	get fristName():string{
+		return this._fristName;
 	}
-	public getLastName():string{
-		return this.lastName;
+	get lastName():string{
+		return this._lastName;
 	}
-	public getAge():number{
-		return this.age;
+	get age():number{
+		return this._age;
 	}
 }	
 
 let customer = new Customer("ahmed","shaheen",27);
-console.log(`${customer.getFristName()} ${customer.getLastName()} ${customer.getAge()}`);
+console.log(`${customer.fristName} ${customer.lastName} ${customer.age}`);

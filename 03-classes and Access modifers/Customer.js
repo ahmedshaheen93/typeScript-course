@@ -1,19 +1,31 @@
 var Customer = /** @class */ (function () {
     function Customer(fristName, lastName, age) {
-        this.fristName = fristName;
-        this.lastName = lastName;
-        this.age = age;
+        this._fristName = fristName;
+        this._lastName = lastName;
+        this._age = age;
     }
-    Customer.prototype.getFristName = function () {
-        return this.fristName;
-    };
-    Customer.prototype.getLastName = function () {
-        return this.lastName;
-    };
-    Customer.prototype.getAge = function () {
-        return this.age;
-    };
+    Object.defineProperty(Customer.prototype, "fristName", {
+        get: function () {
+            return this._fristName;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    Object.defineProperty(Customer.prototype, "lastName", {
+        get: function () {
+            return this._lastName;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    Object.defineProperty(Customer.prototype, "age", {
+        get: function () {
+            return this._age;
+        },
+        enumerable: false,
+        configurable: true
+    });
     return Customer;
 }());
 var customer = new Customer("ahmed", "shaheen", 27);
-console.log(customer.getFristName() + " " + customer.getLastName() + " " + customer.getAge());
+console.log(customer.fristName + " " + customer.lastName + " " + customer.age);
