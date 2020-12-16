@@ -1,4 +1,4 @@
-class Customer{
+export class Customer{
 	constructor(private _fristName:string, private _lastName:string, private _age:number){
 	
 	}
@@ -12,6 +12,3 @@ class Customer{
 		return this._age;
 	}
 }	
-
-let customer = new Customer("ahmed","shaheen",27);
-console.log(`${customer.fristName} ${customer.lastName} ${customer.age}`);
