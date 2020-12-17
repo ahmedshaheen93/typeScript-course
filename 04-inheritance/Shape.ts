@@ -1,4 +1,4 @@
-export class Shape{
+export abstract class Shape{
 	constructor(private _x:number,private _y:number){}
 	get getX() : number {
 		return this._x; 
@@ -16,4 +16,6 @@ export class Shape{
 	public getInfo():string{
 		return `x= ${this.getX}, y= ${this.getY}`;
 	}
+
+	public abstract calcArea():number;
 }

@@ -2,7 +2,7 @@ import {Shape} from './Shape';
 
 export class Circle extends Shape {
 	
-	constructor(private _xCircle:number ,private _yCircle :number , private _redies:number) {
+	constructor(_xCircle:number ,_yCircle :number , private _redies:number) {
 		super(_xCircle,_yCircle);
 	}
 
@@ -10,4 +10,7 @@ export class Circle extends Shape {
 		return super.getInfo() +`, redies= ${this._redies}`;
 	}
 
+	public calcArea():number{
+		return Math.PI * Math.pow(this._redies,2);
+	}
 }

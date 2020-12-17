@@ -27,6 +27,9 @@ var Circle = /** @class */ (function (_super) {
     Circle.prototype.getInfo = function () {
         return _super.prototype.getInfo.call(this) + (", redies= " + this._redies);
     };
+    Circle.prototype.calcArea = function () {
+        return Math.PI * Math.pow(this._redies, 2);
+    };
     return Circle;
 }(Shape_1.Shape));
 exports.Circle = Circle;
