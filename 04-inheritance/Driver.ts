@@ -8,8 +8,12 @@ let circle = new Circle(2,5,10);
 
 let rectangle = new Rectangle(5,3,15,10);
 
-console.log(shape.getInfo());
 
-console.log(circle.getInfo());
+let shapes :Shape[] =[];
 
-console.log(rectangle.getInfo());
+shapes.push(shape);
+shapes.push(circle);
+shapes.push(rectangle);
+for(let tempShape of shapes){
+	console.log(tempShape.getInfo());
+}

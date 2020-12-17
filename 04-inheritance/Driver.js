@@ -6,6 +6,11 @@ var Rectangle_1 = require("./Rectangle");
 var shape = new Shape_1.Shape(5, 2);
 var circle = new Circle_1.Circle(2, 5, 10);
 var rectangle = new Rectangle_1.Rectangle(5, 3, 15, 10);
-console.log(shape.getInfo());
-console.log(circle.getInfo());
-console.log(rectangle.getInfo());
+var shapes = [];
+shapes.push(shape);
+shapes.push(circle);
+shapes.push(rectangle);
+for (var _i = 0, shapes_1 = shapes; _i < shapes_1.length; _i++) {
+    var tempShape = shapes_1[_i];
+    console.log(tempShape.getInfo());
+}
