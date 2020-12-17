@@ -19,8 +19,6 @@ var Circle = /** @class */ (function (_super) {
     __extends(Circle, _super);
     function Circle(_xCircle, _yCircle, _redies) {
         var _this = _super.call(this, _xCircle, _yCircle) || this;
-        _this._xCircle = _xCircle;
-        _this._yCircle = _yCircle;
         _this._redies = _redies;
         return _this;
     }

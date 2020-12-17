@@ -19,8 +19,6 @@ var Rectangle = /** @class */ (function (_super) {
     __extends(Rectangle, _super);
     function Rectangle(xRect, yRect, length, width) {
         var _this = _super.call(this, xRect, yRect) || this;
-        _this.xRect = xRect;
-        _this.yRect = yRect;
         _this.length = length;
         _this.width = width;
         return _this;
