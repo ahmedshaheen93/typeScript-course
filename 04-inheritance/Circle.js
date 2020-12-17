@@ -25,7 +25,7 @@ var Circle = /** @class */ (function (_super) {
         return _this;
     }
     Circle.prototype.getInfo = function () {
-        return _super.prototype.getInfo.call(this) + ("" + this._redies);
+        return _super.prototype.getInfo.call(this) + (", redies= " + this._redies);
     };
     return Circle;
 }(Shape_1.Shape));

@@ -35,7 +35,7 @@ var Shape = /** @class */ (function () {
         configurable: true
     });
     Shape.prototype.getInfo = function () {
-        return "x= " + this.getX + " y= " + this.getY;
+        return "x= " + this.getX + ", y= " + this.getY;
     };
     return Shape;
 }());

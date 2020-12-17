@@ -14,6 +14,6 @@ export class Shape{
 	}
 
 	public getInfo():string{
-		return `x= ${this.getX} y= ${this.getY}`;
+		return `x= ${this.getX}, y= ${this.getY}`;
 	}
 }

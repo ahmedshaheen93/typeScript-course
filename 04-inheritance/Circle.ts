@@ -7,7 +7,7 @@ export class Circle extends Shape {
 	}
 
 	public getInfo():string{
-		return super.getInfo() +`${this._redies}`;
+		return super.getInfo() +`, redies= ${this._redies}`;
 	}
 
 }

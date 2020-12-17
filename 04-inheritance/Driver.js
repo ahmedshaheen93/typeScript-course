@@ -2,7 +2,10 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var Shape_1 = require("./Shape");
 var Circle_1 = require("./Circle");
+var Rectangle_1 = require("./Rectangle");
 var shape = new Shape_1.Shape(5, 2);
 var circle = new Circle_1.Circle(2, 5, 10);
+var rectangle = new Rectangle_1.Rectangle(5, 3, 15, 10);
 console.log(shape.getInfo());
 console.log(circle.getInfo());
+console.log(rectangle.getInfo());
